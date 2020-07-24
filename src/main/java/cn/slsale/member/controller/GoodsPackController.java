@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
 @RestController
 @RequestMapping("/member/goods-pack")

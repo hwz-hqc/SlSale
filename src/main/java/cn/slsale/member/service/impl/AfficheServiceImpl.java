@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
 @Service
 public class AfficheServiceImpl extends ServiceImpl<AfficheMapper, Affiche> implements IAfficheService {

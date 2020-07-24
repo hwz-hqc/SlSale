@@ -1,29 +1,33 @@
 package cn.slsale.member.entity;
 
-import com.fasterxml.jackson.databind.deser.Deserializers;
+import com.baomidou.mybatisplus.annotation.TableField;
+import java.io.Serializable;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
-public class UploadTemp  extends Deserializers.Base {
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author testpage
+ * @since 2020-07-24
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+public class Uploadtemp implements Serializable {
 
-	private String uploader;
-	private String uploadType;
-	private String uploadFilePath;
-	public String getUploader() {
-		return uploader;
-	}
-	public void setUploader(String uploader) {
-		this.uploader = uploader;
-	}
-	public String getUploadType() {
-		return uploadType;
-	}
-	public void setUploadType(String uploadType) {
-		this.uploadType = uploadType;
-	}
-	public String getUploadFilePath() {
-		return uploadFilePath;
-	}
-	public void setUploadFilePath(String uploadFilePath) {
-		this.uploadFilePath = uploadFilePath;
-	}
-	
+    private static final long serialVersionUID = 1L;
+
+    private String uploader;
+
+    @TableField("uploadType")
+    private String uploadType;
+
+    @TableField("uploadFilePath")
+    private String uploadFilePath;
+
+
 }

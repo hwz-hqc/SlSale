@@ -61,7 +61,7 @@
       <!-- AOP事务处理  -->
       <aop:aspectj-autoproxy/>
       <aop:config proxy-target-class="true">
-      	<aop:pointcut expression="execution(* *org.slsale.service..*(..))" id="transService"/>
+      	<aop:pointcut expression="execution(* *cn.slsale.member.service..*(..))" id="transService"/>
       	<aop:advisor advice-ref="txAdvice" pointcut-ref="transService"/>
       </aop:config>
       <!-- txAdvice:需要定义事务管理器，进行事务处理 -->
@@ -73,7 +73,7 @@
 
       <!-- mapper 接口所在包名，spring会自动查找其下的Mapper -->
       <bean class=" org.mybatis.spring.mapper.MapperScannerConfigurer">
-      	<property name="basePackage" value="org.slsale.dao"/>
+      	<property name="basePackage" value="cn.slsale.mapper.mapper"/>
       </bean>
 
       <!-- redis配置 -->

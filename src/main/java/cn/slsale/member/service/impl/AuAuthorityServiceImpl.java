@@ -1,6 +1,6 @@
 package cn.slsale.member.service.impl;
 
-import cn.slsale.member.entity.Authority;
+import cn.slsale.member.entity.AuAuthority;
 import cn.slsale.member.mapper.AuAuthorityMapper;
 import cn.slsale.member.service.IAuAuthorityService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
 @Service
-public class AuAuthorityServiceImpl extends ServiceImpl<AuAuthorityMapper, Authority> implements IAuAuthorityService {
+public class AuAuthorityServiceImpl extends ServiceImpl<AuAuthorityMapper, AuAuthority> implements IAuAuthorityService {
 
 }

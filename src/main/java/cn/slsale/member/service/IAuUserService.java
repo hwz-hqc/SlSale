@@ -1,6 +1,6 @@
 package cn.slsale.member.service;
 
-import cn.slsale.member.entity.User;
+import cn.slsale.member.entity.AuUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
-public interface IAuUserService extends IService<User> {
+public interface IAuUserService extends IService<AuUser> {
 
 }

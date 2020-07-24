@@ -1,6 +1,6 @@
 package cn.slsale.member.service;
 
-import cn.slsale.member.entity.Authority;
+import cn.slsale.member.entity.AuAuthority;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
-public interface IAuAuthorityService extends IService<Authority> {
+public interface IAuAuthorityService extends IService<AuAuthority> {
 
 }

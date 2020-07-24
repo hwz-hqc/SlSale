@@ -18,47 +18,39 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class Affiche implements Serializable {
+public class AuAuthority implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 编码
+     * 角色ID
      */
-    private String code;
+    @TableField("roleId")
+    private Long roleId;
 
     /**
-     * 标题
+     * 功能ID
      */
-    private String title;
+    @TableField("functionId")
+    private Long functionId;
 
     /**
-     * 内容
+     * 用户类型ID
      */
-    private String content;
+    @TableField("userTypeId")
+    private Long userTypeId;
 
     /**
-     * 发布人
+     * 创建时间
      */
-    private String publisher;
+    @TableField("creationTime")
+    private LocalDateTime creationTime;
 
     /**
-     * 发布时间
+     * 创建者
      */
-    @TableField("publishTime")
-    private LocalDateTime publishTime;
-
-    /**
-     * 生效时间
-     */
-    @TableField("startTime")
-    private LocalDateTime startTime;
-
-    /**
-     * 失效时间
-     */
-    @TableField("endTime")
-    private LocalDateTime endTime;
+    @TableField("createBy")
+    private String createBy;
 
 
 }

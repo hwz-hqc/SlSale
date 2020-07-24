@@ -1,6 +1,6 @@
 package cn.slsale.member.service.impl;
 
-import cn.slsale.member.entity.Function;
+import cn.slsale.member.entity.AuFunction;
 import cn.slsale.member.mapper.AuFunctionMapper;
 import cn.slsale.member.service.IAuFunctionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author testpage
- * @since 2020-07-23
+ * @since 2020-07-24
  */
 @Service
-public class AuFunctionServiceImpl extends ServiceImpl<AuFunctionMapper, Function> implements IAuFunctionService {
+public class AuFunctionServiceImpl extends ServiceImpl<AuFunctionMapper, AuFunction> implements IAuFunctionService {
 
 }
